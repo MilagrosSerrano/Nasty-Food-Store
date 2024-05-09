@@ -21,7 +21,14 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
              template: './menuRestaurantOnline/src/index.html',
+             chunks: ['index'],
+             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './menuRestaurantOnline/src/products.html',
+            chunks: ['products'],
+            filename: 'products.html'
+       }),
 
     ],
     module: {
