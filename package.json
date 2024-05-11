@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
+  "module": "commonjs",
   "scripts": {
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,15 +20,18 @@
   "homepage": "https://github.com/MilagrosSerrano/Academia-X#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.1",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.9.0",
+    "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "css-loader": "^7.1.1",
-    "html-loader": "^5.0.0"
+    "html-loader": "^5.0.0",
+    "http-server": "^14.1.1",
+    "server": "^1.0.39"
   }
 }

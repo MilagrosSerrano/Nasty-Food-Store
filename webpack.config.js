@@ -7,12 +7,10 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: ['./menuRestaurantOnline/src/index.js'],
+    entry: ['./Nuevo Proyecto/src/index.js'],
     output: {
-        filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, "dist"),
-        assetModuleFilename: 'assets/[hash][ext][query]',
-        clean: false
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, "dist"),    
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].[hash].css" }),
@@ -20,15 +18,13 @@ module.exports = {
             cleanStaleWebpackAssets: false
         }),
         new HtmlWebpackPlugin({
-             template: './menuRestaurantOnline/src/index.html',
-             chunks: ['index'],
-             filename: 'index.html'
+            template: './Nuevo Proyecto/src/index.html'
         }),
-        new HtmlWebpackPlugin({
+/*         new HtmlWebpackPlugin({
             template: './menuRestaurantOnline/src/products.html',
             chunks: ['products'],
             filename: 'products.html'
-       }),
+       }), */
 
     ],
     module: {
@@ -44,7 +40,7 @@ module.exports = {
                         loader: MiniCssExtractPlugin.loader,
                         options: {},
                     },
-                    'css-loader',
+                    'css-loader'
                 ],
             },
             {
