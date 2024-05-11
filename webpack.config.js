@@ -18,13 +18,8 @@ module.exports = {
             cleanStaleWebpackAssets: false
         }),
         new HtmlWebpackPlugin({
-            template: './Nuevo Proyecto/src/index.html'
+            template: './Nuevo Proyecto/src/index.html',
         }),
-/*         new HtmlWebpackPlugin({
-            template: './menuRestaurantOnline/src/products.html',
-            chunks: ['products'],
-            filename: 'products.html'
-       }), */
 
     ],
     module: {
