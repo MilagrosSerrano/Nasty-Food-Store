@@ -7,20 +7,33 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: ['./Nuevo Proyecto/src/index.js'],
+    entry: {
+        index: { 
+            import: './Nuevo Proyecto/src/index.js', 
+            filename: '[name].js' 
+        } ,
+        products: { 
+            import: './Nuevo Proyecto/src/products.js', 
+            filename: '[name].js' 
+        } 
+    },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, "dist"),    
+        path: path.resolve(__dirname, "dist"),
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].[hash].css" }),
         new CleanWebpackPlugin({
             cleanStaleWebpackAssets: false
         }),
-        new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({ 
             template: './Nuevo Proyecto/src/index.html',
+            filename: 'index.html',
         }),
-
+         new HtmlWebpackPlugin({ 
+            template: './Nuevo Proyecto/src/products.html',
+            filename: 'products.html',
+        }),
     ],
     module: {
         rules: [
@@ -35,7 +48,7 @@ module.exports = {
                         loader: MiniCssExtractPlugin.loader,
                         options: {},
                     },
-                    'css-loader'
+                    'css-loader',
                 ],
             },
             {

@@ -1,3 +1,3 @@
-import './resources/JavaScript/dinamicsMenu';
-import './resources/JavaScript/main';
-import './resources/styles/index.css';
+import './resources/JavaScript/main'; 
+import './resources/styles/generalStyles.css';
+import './resources/styles/indexStyles.css';

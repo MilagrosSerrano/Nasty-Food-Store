@@ -13,18 +13,18 @@
     flex-direction: row;
     gap: 20px;
 }
-img {
+.imgGalery {
     width: max-content;
     height: 600px;
 }
 
-button {
+.btnGalery{
     padding: 5px;
     border: 1px solid rgb(52, 177, 52);
     border-radius: 5px;
     background-color: rgb(52, 177, 52);
 }
-button:hover{
+.btnGalery:hover{
     cursor: pointer;
     scale: 1.05;
 }
@@ -33,7 +33,7 @@ button:hover{
     .galery{
         height: 600px;
     }
-    img{
+    .imgGalery{
         height: 300px;
         width: 300px;
     }

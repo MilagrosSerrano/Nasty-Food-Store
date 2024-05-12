@@ -1,4 +1,4 @@
-main{
+.allProducts{
     margin: 70px 50px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -33,7 +33,7 @@ main{
     75%{transform: translateX(295%);}
     100% {transform: translateX(0%);}
 }
-div{
+.producto{
     display: flex;
     flex-direction: column;
     border: 3px solid orange;
@@ -43,7 +43,7 @@ div{
     text-align: center;
     padding: 10px;
 }
-img{
+.imgProduct{
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -67,7 +67,7 @@ a{
 .contentThreeLines{
     padding: 15px;
 }
-button{
+.botonAñadir{
     padding: 10px;
     margin-bottom: 10px;
     background-color: black ;
@@ -75,7 +75,7 @@ button{
     border-color: orange ;
     color: white;
 }
-button:hover{
+.botonAñadir:hover{
     background-color: orange;
     cursor: pointer;
     scale: 1.1;

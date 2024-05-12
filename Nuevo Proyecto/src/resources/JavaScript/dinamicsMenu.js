@@ -1,16 +1,18 @@
-const mensaje = document.querySelector('.añadido');
-const content = document.getElementById('content');
+document.addEventListener('DOMContentLoaded', function () {
+    const productos = document.querySelectorAll('.producto');
+    const mensaje = document.querySelector('.añadido');
+    const contenidoMensaje = document.getElementById('content');
 
-let añadido = function({target}){
-    console.log(target);
-    if (target.className == 'botonAñadir'){
-        const nombre = target.parentElement.childNodes[3].childNodes[1].textContent;
-        content.textContent = nombre;
-        mensaje.classList.add('animar');
-        setTimeout(() => {
-            mensaje.classList.remove('animar');
-        }, 2000);
-    }
-}
-
-document.addEventListener('click',añadido);
+    productos.forEach(producto => {
+        producto.addEventListener('click', function ({ target }) {
+            console.log(target);
+            if (target.className === 'botonAñadir') {
+                contenidoMensaje.textContent = `${producto.querySelector('h3').textContent}`;
+                mensaje.classList.add('animar');
+                setTimeout(() => {
+                    mensaje.classList.remove('animar');
+                }, 2000);
+            }
+        });
+    });
+});
