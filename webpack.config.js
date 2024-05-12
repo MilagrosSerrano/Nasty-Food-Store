@@ -12,10 +12,6 @@ module.exports = {
             import: './Nuevo Proyecto/src/index.js', 
             filename: '[name].js' 
         } ,
-        products: { 
-            import: './Nuevo Proyecto/src/products.js', 
-            filename: '[name].js' 
-        } 
     },
     output: {
         filename: 'bundle.js',
