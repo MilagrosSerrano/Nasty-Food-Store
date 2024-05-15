@@ -5,33 +5,35 @@
     grid-template-rows: auto;
 }
 .añadido{
+    visibility: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     width: 300px;
     height: 60px;
     position: fixed;
     top: 15%;
-    left: -50%;
-    align-items: center;
-    justify-content: space-evenly;
-    border: 1px solid rgb(71, 146, 71);
-    background-color: rgb(49, 116, 49);
+    left: -70vw;
+    border: 1px solid rgb(255, 230, 0);
+    background-color: rgb(255, 230, 0);
     border-radius: 3px;
     padding: 10px;
 }
 .añadido h3, .añadido h4{
     color: rgb(37, 35, 35);
-    margin-block-start: 5px;
-    margin-block-end: 5px;
+    margin-left: 5px;
+    margin-block-start: 0px;
 }
 .animar{
-    animation: mover 2s ease-in-out 0.1ms;
+    animation: mover 2s ease-in-out ;
+    visibility: visible;
 }
 @keyframes mover {
-    0% {transform: translateX(0%);}
-    50%{transform: translateX(295%);}
-    75%{transform: translateX(295%);}
-    100% {transform: translateX(0%);}
+    0% {transform: translateX(0vw);}
+    50%{transform: translateX(72vw);}
+    75%{transform: translateX(72vw);}
+    100% {transform: translateX(0vw);}
 }
 .producto{
     display: flex;
@@ -79,4 +81,15 @@ a{
     background-color: orange;
     cursor: pointer;
     scale: 1.1;
+} 
+.btnClicked{
+   background-color: orange;
+   scale: 1.1;
+}
+@media only screen and (max-width: 415px){
+    .allProducts{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 30px;
+    };
 }

@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(() => {
                     mensaje.classList.remove('animar');
                 }, 2000);
+                target.classList.add('btnClicked');
+                setTimeout(() => {
+                    target.classList.remove('btnClicked');
+                }, 1000);
             }
         });
     });

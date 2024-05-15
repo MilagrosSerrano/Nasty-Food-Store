@@ -19,22 +19,30 @@
 }
 
 .btnGalery{
-    padding: 5px;
-    border: 1px solid rgb(52, 177, 52);
+    padding: 6px;
+    border: 2px solid orange;
     border-radius: 5px;
-    background-color: rgb(52, 177, 52);
+    background-color:black;
+    color: white;
 }
 .btnGalery:hover{
-    cursor: pointer;
-    scale: 1.05;
+    background-color: orange;
+    color: black;
+    cursor: pointer;  
+    scale: 1.06;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 414px) {
     .galery{
-        height: 600px;
+        height: 500px;
     }
     .imgGalery{
         height: 300px;
         width: 300px;
+    }
+    .btnGalery{ 
+        border: 2px solid rgb(255, 153, 0);
+        background-color:  rgba(0, 0, 0, 0.712);
+        color: white;
     }
 }

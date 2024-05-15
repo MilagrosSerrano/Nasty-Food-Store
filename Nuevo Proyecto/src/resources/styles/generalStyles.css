@@ -32,19 +32,21 @@ footer{
     text-align: center;
     font-size: larger;
     padding: 10px;
-    width: 100%;
+    max-width: 100%;
 }
 
-@media only screen and (max-width:415px){
+@media only screen and (max-width:414px){
     body{
-        max-width: 410px;
+        margin: 0;
+        width: 100%;
+        max-width: 414px;
     }
     nav{
-        width: 100%;
-        max-width: 385px;
+        width:auto;
         height: 40px;
         padding: 8px 25px;
-        justify-content: space-between;
+        position: inherit;
+        justify-content: space-evenly;
     }
     .navElement{
         margin-left: 0px;
