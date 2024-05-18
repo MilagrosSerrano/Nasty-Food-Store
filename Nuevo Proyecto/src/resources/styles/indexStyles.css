@@ -1,12 +1,12 @@
 .galery {
+    width: 100vw;
     margin-top: 50px;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: center;
-    height: 800px;
+    height: 900px;
 }
 .botones{
     display: flex;
@@ -32,96 +32,43 @@
     scale: 1.06;
 }
 
-@media only screen and (max-width: 1024px){
-    main{
-        width: 1024px;
-    }
-    .botones{
-        gap: 40px;
-    }
-    .btnGalery{
-        height: 40px;
-        padding: 8px;
-    }
-}
 
 @media only screen and (max-width: 768px){
-    main{
-        width: 768px;
-    }
-    .botones{
-        gap: 35px;
-    }
     .imgGalery{
         height: 500px;
-        width: 500px;
+    }
+    .galery{
+        height: 800px;
     }
 }
 
-
-@media only screen and (max-width: 425px) {
-    main{
-        width: 425px;
-    }
-    .galery{
-        height: 600px;
-    }
-    .botones{
-        gap: 30px;
-    }
+@media only screen and (max-width:650px) {
     .imgGalery{
-        height: 350px;
-        width: 350px;
-    }
-    .btnGalery{ 
-        border: 2px solid rgb(255, 153, 0);
-        background-color:  rgba(0, 0, 0, 0.712);
-        color: white;
-        height: 35px;
-    }
-}
-
-@media only screen and (max-width: 375px){
-    main{
-        width: 375px;
-    }
-    .galery{
-        height: 500px;
-    }
-    .botones{
-        gap: 20px;
-    }
-    .imgGalery{
-        height: 300px;
-        width: 300px;
-    }
-    .btnGalery{ 
-        border: 2px solid rgb(255, 153, 0);
-        background-color:  rgba(0, 0, 0, 0.712);
-        color: white;
-        height: 35px;
-    }
-}
-
-@media only screen and (max-width: 320px){
-    main{
-        width: 320px;
-    }
-    .galery{
         height: 400px;
     }
-    .botones{
-        gap: 10px;
+}
+
+@media only screen and (max-width:550px) {
+    .imgGalery{
+        height: 300px;
     }
+    .galery{
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width:375px){
     .imgGalery{
         height: 250px;
-        width: 250px;
     }
-    .btnGalery{ 
-        border: 2px solid rgb(255, 153, 0);
-        background-color:  rgba(0, 0, 0, 0.712);
-        color: white;
-        font-size: 10px;
-        height: 35px;
+    .btnGalery{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .btnGalery{
+        font-size: 11px;
+        padding: 4px;
     }
 }

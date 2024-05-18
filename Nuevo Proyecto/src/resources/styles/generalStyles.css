@@ -1,25 +1,23 @@
 body{
     margin: 0;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(31, 28, 28);
 }
 nav{
+    width: 100vw;
     position: fixed;
     display: flex;
     top: 0;
     background-color: orange;
-    width: 100%;
     height: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .navElement{
     text-decoration: none;
     font-size: larger;
     font-weight: bolder;
     color:black;
-    margin-left: 50px;
-    margin-right: 50px; 
 }
 .navElement:hover{
     text-decoration: underline;
@@ -28,96 +26,21 @@ nav{
 }
 
 footer{
+    width: 100vw;
     background-color: orange;
     text-align: center;
     font-size: larger;
     padding: 10px 0px;
-    width: 100%;
 }
 
-@media only screen and (max-width: 1024px){
-    body{
-        width: 1024px;
-    }
-    nav{
-        width: 1024px;
-        justify-content: space-evenly;
-    }
+@media only screen and (max-width:375px){
     .navElement{
-        margin: 0px 10px;
-    }
-    footer{
-        width: 1024px;
+        font-size: 18px;
     }
 }
 
-@media only screen and (max-width:768px){
-    body{
-        width: 768px;
-    }
-    nav{
-        width: 768px;
-        justify-content: space-evenly;
-    }
-    .navElement{
-        margin: 0px 10px;
-    }
-    footer{
-        width: 768px;
-    }
-}
-
-@media only screen and (max-width:425px){
-    body{
-        width: 425px;
-    }
-    nav{
-        width: 425px;
-        height: 40px;
-        position: inherit;
-        justify-content: space-evenly;
-    }
+@media only screen and (max-width:375px){
     .navElement{
         font-size: 16px;
-        margin: 0px 5px;
-    }
-    footer{
-        width: 425px;
-    }
-}
-
-@media only screen and (max-width: 375px){
-    body{
-        width: 375px;
-    }
-    nav{
-        max-width: 375px;
-        height: 30px;
-        padding: 8px 0px;
-        justify-content: space-evenly;
-    }
-    .navElement{
-        margin: 0px 5px;
-        font-size: 16px;
-    }
-    footer{
-        width: 375px;
-    }
-}
-
-@media only screen and (max-width: 320px){
-    body{
-        width: 320px;
-    }
-    nav{
-        width: 320px;
-        height: 20px;
-        justify-content: space-evenly;
-    }
-    .navElement{
-        font-size: 14px;
-    }
-    footer{
-        width: 320px;
     }
 }
