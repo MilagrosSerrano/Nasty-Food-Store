@@ -1,4 +1,5 @@
 .allProducts{
+    width: 100%;
     margin: 70px 50px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -86,10 +87,40 @@ a{
    background-color: orange;
    scale: 1.1;
 }
-@media only screen and (max-width: 415px){
+
+@media only screen and (max-width: 1024px){
     .allProducts{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        margin: 0px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .allProducts{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        column-gap: 0;
+        row-gap: 30px;
+        margin: 80px 0px 20px 0px;
+    }
+    .producto{
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .allProducts{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 50px 30px;
-    };
+        column-width: auto;
+        margin: 20px 0px;
+    }
+    .producto{
+        margin: 20px 30px;
+    }
 }

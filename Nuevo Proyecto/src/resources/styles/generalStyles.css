@@ -31,25 +31,93 @@ footer{
     background-color: orange;
     text-align: center;
     font-size: larger;
-    padding: 10px;
-    max-width: 100%;
+    padding: 10px 0px;
+    width: 100%;
 }
 
-@media only screen and (max-width:414px){
+@media only screen and (max-width: 1024px){
     body{
-        margin: 0;
-        width: 100%;
-        max-width: 414px;
+        width: 1024px;
     }
     nav{
-        width:auto;
+        width: 1024px;
+        justify-content: space-evenly;
+    }
+    .navElement{
+        margin: 0px 10px;
+    }
+    footer{
+        width: 1024px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    body{
+        width: 768px;
+    }
+    nav{
+        width: 768px;
+        justify-content: space-evenly;
+    }
+    .navElement{
+        margin: 0px 10px;
+    }
+    footer{
+        width: 768px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    body{
+        width: 425px;
+    }
+    nav{
+        width: 425px;
         height: 40px;
-        padding: 8px 25px;
         position: inherit;
         justify-content: space-evenly;
     }
     .navElement{
-        margin-left: 0px;
-        margin-right: 0px;
+        font-size: 16px;
+        margin: 0px 5px;
+    }
+    footer{
+        width: 425px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        width: 375px;
+    }
+    nav{
+        max-width: 375px;
+        height: 30px;
+        padding: 8px 0px;
+        justify-content: space-evenly;
+    }
+    .navElement{
+        margin: 0px 5px;
+        font-size: 16px;
+    }
+    footer{
+        width: 375px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    body{
+        width: 320px;
+    }
+    nav{
+        width: 320px;
+        height: 20px;
+        justify-content: space-evenly;
+    }
+    .navElement{
+        font-size: 14px;
+    }
+    footer{
+        width: 320px;
     }
 }
