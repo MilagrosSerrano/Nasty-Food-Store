@@ -1,6 +1,8 @@
 #homeTitle{
     color: rgb(252, 226, 170);
-    margin-top: 150px;
+    margin-top: 15vh;
+    text-decoration: 2px underline;
+    text-underline-offset: 5px;
     text-align: center;
 }
 .galery {
@@ -49,6 +51,9 @@
 }
 
 @media only screen and (max-width:650px) {
+    .galery{
+        height: 700px;
+    }
     .imgGalery{
         height: 400px;
     }
@@ -59,7 +64,7 @@
         height: 300px;
     }
     .galery{
-        height: 700px;
+        height: 500px;
     }
 }
 
