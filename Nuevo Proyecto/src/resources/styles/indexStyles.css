@@ -1,6 +1,11 @@
+#homeTitle{
+    color: rgb(252, 226, 170);
+    margin-top: 150px;
+    text-align: center;
+}
 .galery {
     width: 100vw;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
